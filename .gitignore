@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+uploads/
+*.pdf
+*.exe
+.gocache/
+.gotmp/
+.DS_Store
+Thumbs.db

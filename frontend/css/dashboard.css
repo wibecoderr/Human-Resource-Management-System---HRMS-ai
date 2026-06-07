@@ -1,0 +1,22 @@
+.dashboard-grid { display: grid; gap: 18px; }
+.quick-panel {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 18px;
+}
+.ai-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #17202a, #1e3a8a);
+  color: #fff;
+}
+.ai-strip p { margin: 4px 0 0; color: rgba(255,255,255,.78); }
+.ai-strip h2 { margin: 0; font-size: 20px; }
+@media (max-width: 900px) {
+  .quick-panel { grid-template-columns: 1fr; }
+  .ai-strip { align-items: flex-start; flex-direction: column; }
+}

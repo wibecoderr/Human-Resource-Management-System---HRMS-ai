@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | HRMS</title>
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="brand"><span class="brand-mark">H</span><span>HRMS</span></div><nav class="nav-list" id="navList"></nav></aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="btn btn-icon mobile-only" id="menuBtn" title="Menu"></button>
+        <div class="page-title"><h1>Dashboard</h1><p>Live overview of your HR operations.</p></div>
+        <div class="top-actions"><button class="btn btn-icon" id="notificationBtn" title="Notifications"></button><div class="user-chip"><span class="avatar" id="userAvatar">U</span><span class="user-meta"><strong id="userName">User</strong><br><small id="userRole">Role</small></span></div><button class="btn btn-icon" id="logoutBtn" title="Logout"></button></div>
+        <div class="notification-menu" id="notificationMenu"><div class="notification-item unread">Pending leave approvals need review.</div><div class="notification-item unread">New candidate applications may be available.</div><button class="btn btn-ghost" id="markReadBtn" style="width:100%">Mark as read</button></div>
+      </header>
+      <section class="content dashboard-grid">
+        <div class="ai-strip"><div><h2>AI-powered HR workspace</h2><p>Use resume screening to compare candidate skills against job needs.</p></div><a class="btn btn-primary" href="resume-screening.html">Open Screening</a></div>
+        <div class="grid grid-4" id="metricGrid"></div>
+        <div class="quick-panel">
+          <div class="panel"><div class="panel-header"><div><h2>Employee Distribution</h2><p>Calculated from employee roles.</p></div></div><div class="chart" id="employeeChart"></div></div>
+          <div class="panel"><div class="panel-header"><div><h2>Operations Overview</h2><p>Attendance and leave signal.</p></div></div><div class="chart" id="opsChart"></div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/api.js?v=20260607-1"></script><script src="js/auth.js"></script><script src="js/dashboard.js"></script>
+</body>
+</html>
